@@ -2,6 +2,7 @@ package admissiondeskv2;
 
 import admissiondeskv2.listeners.AuditLog;
 import admissiondeskv2.listeners.DoctorPager;
+import admissiondeskv2.listeners.FamilySms;
 import admissiondeskv2.listeners.WardBoard;
 
 public class Main {
@@ -14,6 +15,7 @@ public class Main {
     admissionDesk.addListener(new WardBoard());
     admissionDesk.addListener(new DoctorPager());
     admissionDesk.addListener(new AuditLog());
+    admissionDesk.addListener(new FamilySms());
 
     admissionDesk.admit(maria);
 
